@@ -315,7 +315,6 @@ h3.hello {
 }
 
 h3.hello span {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: var(--skin-color);
@@ -336,6 +335,11 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 
+.home .home-blob svg {
+  color: var(--skin-color);
+  fill: var(--skin-color);
+}
+
 /* ============== About */
 
 .about .about-content {
@@ -351,6 +355,7 @@ h3.my-profession {
 .about .about-content .about-text h3 {
   font-size: 24px;
   margin-bottom: 15px;
+  color: var(--text-black-900);
 }
 
 .about .about-content .about-text h3 span {

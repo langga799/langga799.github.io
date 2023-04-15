@@ -11,6 +11,12 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Change color tab menu aside
+function changeColorMenu(element) {
+  document.querySelector("a.active").classList.remove("active");
+  element.classList.add("active");
+}
+
 // Change theme colors
 const alternateStyle = document.querySelectorAll(".alternate-style");
 

@@ -42,11 +42,11 @@
             </div>
 
             <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a> </li>
-                <li> <a href="#about"><i class="fa fa-user"></i>About</a></li>
-                <li> <a href="#service"><i class="fa fa-list"></i>Service</a></li>
-                <li> <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li> <a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+                <li> <a href="#home" onclick="changeColorMenu(this)" class="active"><i class="fa fa-home"></i>Home</a> </li>
+                <li> <a href="#about" onclick="changeColorMenu(this)"><i class="fa fa-user"></i>About</a></li>
+                <li> <a href="#service" onclick="changeColorMenu(this)"><i class="fa fa-list"></i>Service</a></li>
+                <li> <a href="#portfolio" onclick="changeColorMenu(this)"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li> <a href="#contact" onclick="changeColorMenu(this)"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
 
         </div>
@@ -65,7 +65,25 @@
                             <a href="#contact" class="btn hire-me">Hire Me</a>
                         </div>
                         <div class="home-img padd-15">
-                            <img src="assets/img/my-profile.png" alt="">
+
+                            <svg class="home-blob" viewBox="40 30 150 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask" mask-type="alpha">
+                                  <path
+                                  fill="#504e70"
+                                    d="M67.2,-37.1C77.1,-21.7,68.1,6.2,53.8,28C39.4,49.8,19.7,65.5,2.3,64.2C-15.2,62.9,-30.4,44.6,-40.4,25.3C-50.4,6,-55.3,-14.4,-47.7,-28.5C-40.1,-42.6,-20.1,-50.5,4.3,-52.9C28.7,-55.4,57.4,-52.6,67.2,-37.1Z"
+                                    transform="translate(100 100)"
+                                  />
+                                </mask>
+                                <g mask="url(#mask)">
+                                  <path
+                                  fill="#504e70"
+                                    d="M67.2,-37.1C77.1,-21.7,68.1,6.2,53.8,28C39.4,49.8,19.7,65.5,2.3,64.2C-15.2,62.9,-30.4,44.6,-40.4,25.3C-50.4,6,-55.3,-14.4,-47.7,-28.5C-40.1,-42.6,-20.1,-50.5,4.3,-52.9C28.7,-55.4,57.4,-52.6,67.2,-37.1Z"
+                                    transform="translate(100 100)"
+                                  />
+                                  <image class="home-blob-image" x="30" y="30" xlink:href="assets/img/my-profile.png" style="width:100%;"/>
+                                </g>
+                              </svg>
+                            <!-- <img src="assets/img/my-profile.png" alt=""> -->
                         </div>
                     </div>
                 </div>
@@ -491,6 +509,7 @@
 
 
         <!-- ========== JAVA SCRIPT FILES ========== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
         <script src="js/script.js"></script>
         <script src="js/style-switcher.js"></script>
 </body>
